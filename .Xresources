@@ -1,0 +1,36 @@
+scrollBar: false
+
+! Background color
+URxvt*background: black
+!
+! ! Цвет шрифта
+URxvt*foreground: white
+!
+! ! Другие цвета
+! URxvt*color0: black
+! URxvt*color1: red3
+! URxvt*color2: green3
+! URxvt*color3: yellow3
+! URxvt*color4: blue2
+! URxvt*color5: magenta3
+! URxvt*color6: cyan3
+! URxvt*color7: gray90
+! URxvt*color8: grey50
+! URxvt*color9: red
+! URxvt*color10: green
+! URxvt*color11: yellow
+! URxvt*color12: blue
+! URxvt*color13: magenta
+! URxvt*color14: cyan
+! URxvt*color15: white
+!
+! ------------------------------------------------------------------------------
+! ! ROFI Color theme
+! ! ------------------------------------------------------------------------------
+rofi.opacity: 50
+rofi.color-enabled: true
+rofi.font: System San Francisco Display 12
+rofi.color-window: #002b37, #002b37, #003642
+rofi.color-normal: #002b37, #819396, #003643, #008ed4, #ffffff
+rofi.color-active: #002b37, #008ed4, #003643, #008ed4, #66c6ff
+rofi.color-urgent: #002b37, #da4281, #003643, #008ed4, #890661

@@ -98,13 +98,15 @@ set $teleworkspace "  Tele + Pigi "
 set $terminals "1: "
 set $firefox "  Firefox"
 set $ide " Editor"
+set $audio " Audio"
+
 # switch to workspace
 bindsym $mod+1 workspace $terminals
 bindsym $mod+2 workspace $ide
 bindsym $mod+3 workspace $firefox
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace $teleworkspace
-bindsym $mod+6 workspace 6
+bindsym $mod+6 workspace $audio
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
@@ -116,7 +118,7 @@ bindsym $mod+Shift+2 move container to workspace $ide
 bindsym $mod+Shift+3 move container to workspace $firefox
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace $teleworkspace
-bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+6 move container to workspace $audio
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9

@@ -1,3 +1,6 @@
 i3/scripts/credential.json
-mpd/log
+/mpd/log
+/mpd/database
+/mpd/pid
+/mpd/state
 .idea

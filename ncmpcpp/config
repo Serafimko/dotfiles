@@ -132,7 +132,7 @@ now_playing_suffix = $/b
 ##   not available.
 ##
 #
-song_columns_list_format = (20)[]{a} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+song_columns_list_format = (20)[]{a} (50)[white]{t|f:Title} (7f)[magenta]{l}
 #
 ##### various settings #####
 #
@@ -220,9 +220,9 @@ user_interface = classic
 #
 #default_tag_editor_pattern = %n - %t
 #
-header_visibility = no
+header_visibility = yes
 #
-statusbar_visibility = no
+statusbar_visibility = yes
 #
 #titles_visibility = yes
 #

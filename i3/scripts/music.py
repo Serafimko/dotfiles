@@ -35,7 +35,6 @@ class MusicFinder:
                     artist = attachment['audio'].get('artist')
                     title = attachment['audio'].get('title')
                     if not self.check_song((artist, title)):
-                        self.add_to_db((artist, title))
                         url = attachment['audio'].get('url')
                         if 'http' not in url:
                             continue
@@ -44,6 +43,7 @@ class MusicFinder:
                         # print(attachment['audio'].get('url'))
                         self.write_file(MUSIC_PATH, name, url)
                         song_count += 1
+                        self.add_to_db((artist, title))
                     else:
                         continue
         if song_count != 0:

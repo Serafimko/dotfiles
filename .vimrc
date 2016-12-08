@@ -26,6 +26,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'gisphm/vim-gitignore'
+" Snippets for ^
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 " ---------------------------------------------------------------------------
 call vundle#end()            " required
 filetype plugin indent on    " required

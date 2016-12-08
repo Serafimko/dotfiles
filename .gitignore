@@ -1,9 +1,11 @@
 i3/scripts/credential.json
-/mpd/log
-/mpd/database
-/mpd/pid
-/mpd/state
+mpd/log
+mpd/database
+mpd/pid
+mpd/state
 .idea
 mpd/database
 mpd/pid
 mpd/state
+/canto
+!conf

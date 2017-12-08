@@ -94,11 +94,11 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $teleworkspace "  Tele + Pigi "
+set $teleworkspace "5:   Tele + Pigi "
 set $terminals "1: "
-set $firefox "  Firefox"
-set $ide " Editor"
-set $audio " Audio"
+set $firefox "3:   Firefox"
+set $ide "2:  Editor"
+set $audio "6:  Audio"
 
 # switch to workspace
 bindsym $mod+1 workspace $terminals
@@ -163,7 +163,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command py3status
+  status_command py3status -c ~/.config/i3/i3status.conf
   colors {
     separator #666666
     background #222222

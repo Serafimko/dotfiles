@@ -1,3 +1,3 @@
 #!/bin/bash
-yaourt -Sy && sudo abs
+yaourt -Sy 
 yaourt -Syua --noconfirm

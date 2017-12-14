@@ -176,7 +176,7 @@ bar {
   }
 }
 
-
+for_window [class="^.*"] border pixel 1
 bindsym $mod+Shift+x exec /home/serafim/.config/i3/lock.sh
 bindsym $mod+F10 exec /home/serafim/.config/i3/volume_down.sh
 bindsym $mod+F11 exec /home/serafim/.config/i3/volume_up.sh

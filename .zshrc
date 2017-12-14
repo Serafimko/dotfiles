@@ -37,6 +37,7 @@ alias smon='ssh ma@mon'
 alias score='ssh ma@192.168.22.195'
 alias ssup='ssh ma@support.miran.ru'
 
+alias newsboat='newsboat -C ~/.config/.newsboat'
 alias sysupg='sh ~/.config/i3/scripts/update.sh'
 alias pycharm='sh ~/pycharm/bin/pycharm.sh'
 alias stproj='sh ~/.config/i3/scripts/mkproject.sh'

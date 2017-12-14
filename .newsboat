@@ -1,0 +1,23 @@
+max-items 100
+auto-reload yes
+reload-time 30
+cleanup-on-quit yes
+refresh-on-startup yes
+show-read-articles no
+show-read-feeds no
+prepopulate-query-feeds yes
+feed-sort-order name
+show-keymap-hint false
+swap-title-and-hints false
+browser firefox %u
+
+bind-key e open-in-browser-and-mark-read
+
+color background color15 color0
+color info color7 color8
+color article color15 color0
+color listnormal color15 color0
+color listfocus color8 color7
+color listnormal_unread color15 color0
+color listfocus_unread color8 color7
+highlight article "^(Feed|Title|Author|Link|Date):.*" color7 color0

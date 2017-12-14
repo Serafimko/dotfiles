@@ -31,6 +31,7 @@ export TERMINAL="/usr/bin/terminator"
 alias ls='ls -la --color=auto'
 alias lsm='ls -la --color=auto --block-size=M'
 alias lsk='ls -la --color=auto --block-size=K'
+alias mux='tmuxinator'
 
 alias sshs='ssh serafim@serafimko.cf'
 alias smon='ssh ma@mon'

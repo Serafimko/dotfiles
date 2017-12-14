@@ -1,10 +1,66 @@
-scrollBar: false
+! xft fonts
+!------------------------------------------------------------------
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.lcdfilter:  lcddefault
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+!------------------------------------------------------------------
 
-! Background color
-URxvt*background: black
-!
-! ! Цвет шрифта
-URxvt*foreground: white
+! urxvt
+!---------------------------------------------------------------------
+URxvt*font:xft:DejaVu\ Sans\ Mono:bold:pixelsize=14:antialias=true,xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:pixelsize=14:antialias=true
+!---------------------------------------------------------------------
+URxvt*scrollBar: false
+URxvt*saveLines: 1000000
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+urxvt*transparent: false
+
+! urls
+! ----------------------------------
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.underlineURLs: true
+URxvt.matcher.button: 1
+URxvt*.transparent: true
+URxvt*.shading: 30
+*background: #002b36
+*foreground: #839496
+
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
 !
 ! ! Другие цвета
 ! URxvt*color0: black

@@ -10,3 +10,4 @@ mpd/pid
 mpd/state
 /canto
 !conf
+.vim/.netrwhist

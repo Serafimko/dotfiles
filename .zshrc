@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="/usr/bin/vim"
 export TERMINAL="/usr/bin/terminator"
 
-alias ls='ls -la --color=auto'
+alias ls='ls++'
 alias lsm='ls -la --color=auto --block-size=M'
 alias lsk='ls -la --color=auto --block-size=K'
 alias mux='tmuxinator'
@@ -59,3 +59,6 @@ if exists percol; then
     zle -N percol_select_history
     bindkey '^R' percol_select_history
 fi
+
+
+source "/home/serafim/.oh-my-zsh/custom/themes/spaceship.zsh-theme"

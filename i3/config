@@ -199,7 +199,6 @@ assign [class="telegram-desktop"] $teleworkspace
 exec pidgin
 assign [class="pidgin"] $teleworkspace
 exec_always feh --bg-center '/home/serafim/Pictures/paper.png' --bg-center '/home/serafim/Pictures/paper.png'
-exec terminator -l ma
 exec_always setxkbmap -layout "us,ru" && setxkbmap -option "grp:caps_toggle,grp_led:scroll,compose:ralt"
 exec_always xrandr --output HDMI1 --auto --right-of HDMI2
 exec_always pulseaudio --start

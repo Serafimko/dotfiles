@@ -1,8 +1,8 @@
 sw_volume: 72
 audio_device_state:1:My Pulse Output
 state: play
-current: 41
-time: 19.388000
+current: 0
+time: 4.411000
 random: 1
 repeat: 1
 single: 0
@@ -11,50 +11,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Band Of Skulls_-_Sweet Sour.mp3
-1:Bazart__Chaos.mp3
-2:Bazart__Echo.mp3
-3:Bazart__Goud.mp3
-4:Bazart__Kloon.mp3
-5:Bazart__Lux.mp3
-6:Bazart__Nacht.mp3
-7:Bazart__Open.mp3
-8:Bazart__Tunnels.mp3
-9:Bazart__Voodoo.mp3
-10:Bazart_-_Chaos.mp3
-11:Bazart_-_Goud.mp3
-12:Bazart_-_Echo.mp3
-13:Bazart_-_Kloon.mp3
-14:Bazart_-_Nacht.mp3
-15:Bazart_-_Lux.mp3
-16:Bazart_-_Open.mp3
-17:Bazart_-_Tunnels.mp3
-18:Bazart_-_Voodoo.mp3
-19:The Black Belles_-_Leave You With A Letter.mp3
-20:The Dead Weather_-_Gasoline.mp3
-21:The Jack Wood_-_Dig Deeper.mp3
-22:Le Butcherettes_-_Lonely & Drunk.mp3
-23:The Pack A.D._-_Crazy.mp3
-24:Wolves At The Gate_-_Asleep.mp3
-25:Wolves At The Gate_-_Majesty In Misery.mp3
-26:Wolves At The Gate_-_Safeguards.mp3
-27:Wolves At The Gate_-_Slaves.mp3
-28:Wolves At the Gate_-_Sleepwalking.mp3
-29:Wolves At The Gate_-_Step Out To The Water.mp3
-30:Wolves At The Gate_-_Wake Up.mp3
-31:Валенитн Стрыкало_-_Взрослые травмы.mp3
-32:Валенитн-Стрыкало__Взрослые-травмы.mp3
-33:Валентин Стрыкало_-_92.mp3
-34:Валентин Стрыкало_-_Бесполезно.mp3
-35:Валентин Стрыкало_-_Котельная.mp3
-36:Валентин Стрыкало_-_Тени.mp3
-37:Валентин Стрыкало_-_Ускользает.mp3
-38:Валентин-Стрыкало__92.mp3
-39:Валентин-Стрыкало__Бесполезно.mp3
-40:Валентин-Стрыкало__Котельная.mp3
-41:Валентин-Стрыкало__Тени.mp3
-42:Валентин-Стрыкало__Ускользает.mp3
-43:Валентин-Стрыкало__Ускользает.mp3
-44:Валентин-Стрыкало__Ускользает.mp3
-45:Валентин-Стрыкало__Ускользает.mp3
+0:Christine – Drama (instrumental).mp3
 playlist_end

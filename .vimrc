@@ -31,6 +31,7 @@ Plugin 'gisphm/vim-gitignore'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'jelera/vim-javascript-syntax'
 " ---------------------------------------------------------------------------
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -108,7 +109,7 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set smartindent
-:map <C-p> :LivedownPreview<CR>
+map <C-p> :LivedownPreview<CR>
 let airline_powerline_fonts = 1
 set t_Co=256
 set laststatus=2

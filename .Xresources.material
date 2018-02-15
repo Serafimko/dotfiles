@@ -1,0 +1,47 @@
+! Material design color scheme
+! black
+*color0: #435B67
+*color8: #A1B0B8
+! red
+*color1: #FC3841
+*color9: #FC746D
+! green
+*color2: #5CF19E
+*color10: #ADF7BE
+! yellow
+*color3: #FED032
+*color11: #FEE16C
+! blue
+*color4: #37B6FF
+*color12: #70CFFF
+! magenta
+*color5: #FC226E
+*color13: #FC669B
+! cyan
+*color6: #59FFD1
+*color14: #9AFFE6
+! white
+*color7: #FFFFFF
+*color15: #FFFFFF
+
+! Xft
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+*font: xft:Inconsolata for Powerline:pixelsize=14
+
+! rxvt-unicode specific settings
+URxvt*scrollBar:          False
+URxvt*depth:              32
+URxvt*background:         [85]#1D1F21
+URxvt*intensityStyles:    True
+
+! Sane defaults for dzen2
+dzen2.font:       xft:Share Tech:pixelsize=10
+dzen2.foreground: #22EE11
+dzen2.background: black

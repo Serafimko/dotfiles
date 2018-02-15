@@ -12,3 +12,4 @@ mpd/state
 !conf
 **/node_modules
 .vim/.netrwhist
+.vim/pack

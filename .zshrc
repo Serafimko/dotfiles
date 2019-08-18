@@ -9,7 +9,7 @@ ZSH_THEME="agnoster"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git archlinux django docker)
+plugins=(git archlinux django docker kubectl)
 
 # Set up Node Version Manager
 export NVM_DIR="$HOME/.nvm"                            # You can change this if you want.
@@ -20,7 +20,6 @@ export PATH="$HOME/.config/bspwm:/home/serafim/bin:/usr/local/sbin:/usr/local/bi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-. /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -60,5 +59,6 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
-
-source "/home/serafim/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+if exists nvm; then
+	nvm use stable
+fi

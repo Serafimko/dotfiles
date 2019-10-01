@@ -47,7 +47,4 @@ alias maimw='maim -i $(xdotool getactivewindow) ~/Pictures/window.jpg'
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
-
-if exists nvm; then
-	nvm use stable
-fi
+nvm use stable

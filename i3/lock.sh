@@ -26,6 +26,12 @@ BLURTYPE="5x2" # 3.80s
 #BLURTYPE="2x8" # 2.90s
 #BLURTYPE="2x3" # 2.92s
 
+mpv_exists=$(ps aux | awk '{print $11}' | grep mpv)
+
+if [ "mpv" == "$mpv_exists" ]; then
+    echo '{ "command": ["set_property", "pause", true] }' | socat - /tmp/mpvsocket
+fi
+
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
 convert $IMAGE -blur $BLURTYPE $IMAGE

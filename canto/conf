@@ -1,7 +1,7 @@
 {
     "CantoCurses": {
         "browser": {
-            "path": "firefox"
+            "path": "google-chrome-stable"
         },
         "color": {
             "": 0,
@@ -293,7 +293,8 @@
             "maintag:РОСКОМСВОБОДА",
             "maintag:Grim Dawn по-русски",
             "maintag:Дайджест новостей о python",
-            "maintag:Последние обновления в избранных произведениях на всех сайтах Read Manga"
+            "maintag:Последние обновления в избранных произведениях на всех сайтах Read Manga",
+            "maintag:Path of Exile News"
         ]
     },
     "defaults": {
@@ -338,6 +339,10 @@
         {
             "name": "Последние обновления в избранных произведениях на всех сайтах Read Manga",
             "url": "http://grouple.ru/user/rss/644414"
+        },
+        {
+            "name": "Path of Exile News",
+            "url": "https://www.pathofexile.com/news/rss"
         }
     ],
     "tags": {
@@ -345,7 +350,7 @@
             "collapsed": true
         },
         "maintag:Grim Dawn по-русски": {
-            "collapsed": false
+            "collapsed": true
         },
         "maintag:Linux.org.ru: Новости": {
             "collapsed": true
@@ -353,8 +358,11 @@
         "maintag:OpenNews.opennet.ru: Общая лента новостей": {
             "collapsed": true
         },
+        "maintag:Path of Exile News": {
+            "collapsed": true
+        },
         "maintag:Дайджест новостей о python": {
-            "collapsed": false
+            "collapsed": true
         },
         "maintag:Последние обновления в избранных произведениях на всех сайтах Read Manga": {
             "collapsed": true

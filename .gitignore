@@ -5,9 +5,7 @@ mpd/pid
 mpd/state
 .vim/bundle
 .idea
-mpd/database
-mpd/pid
-mpd/state
+mpv/watch_later/
 /canto
 !conf
 **/node_modules

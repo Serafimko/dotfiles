@@ -191,17 +191,15 @@ bindsym $mod+r mode "resize"
 #}
 
 for_window [class="^.*"] border pixel 1
-bindsym $mod+Shift+x exec /home/serafim/.config/i3/lock.sh
+bindsym $mod+Shift+x exec $HOME/.config/i3/scripts/lock_mpv.sh
 bindsym $mod+F10 exec /home/serafim/.config/i3/volume_down.sh
 bindsym $mod+F11 exec /home/serafim/.config/i3/volume_up.sh
 
 exec telegram-desktop
 assign [class="telegram-desktop"] $teleworkspace
-exec pidgin
-assign [class="pidgin"] $teleworkspace
-exec_always feh --bg-center '/home/serafim/Pictures/paper.png' --bg-center '/home/serafim/Pictures/paper.png'
-exec_always setxkbmap -layout "us,ru" && setxkbmap -option "grp:caps_toggle,grp_led:scroll,compose:ralt"
-exec_always xrandr --output HDMI1 --auto --right-of HDMI2
+exec_always feh --bg-fill '/home/serafim/Pictures/paper.png'
+exec_always setxkbmap -layout "us,ru" && setxkbmap -option "grp:caps_toggle"
+exec_always xrandr --output DP1 --auto --right-of HDMI1
 exec_always pulseaudio --start
 exec_always wmname LG3D
 exec_always --no-startup-id $HOME/.config/polybar/start.sh

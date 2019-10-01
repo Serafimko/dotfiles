@@ -1,0 +1,10 @@
+# ~/.tmuxinator/sample.yml
+
+name: sample
+root: ~/
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - htop

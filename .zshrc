@@ -5,7 +5,7 @@ source /usr/share/zsh/share/antigen.zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -48,3 +48,12 @@ alias maimw='maim -i $(xdotool getactivewindow) ~/Pictures/window.jpg'
 autoload -U promptinit; promptinit
 prompt spaceship
 nvm use stable
+
+### Added by Zplugin's installer
+source '/home/serafim/.zplugin/bin/zplugin.zsh'
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+### End of Zplugin installer's chunk
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /home/serafim/.zsh/BlaCk-Void.zshrc

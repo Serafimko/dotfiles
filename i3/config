@@ -38,7 +38,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -eh 2 -lines 3 -hide-scrollbar -bw 0
+# bindsym $mod+d exec rofi -show run -eh 2 -lines 3 -hide-scrollbar -bw 0
+bindsym $mod+d exec --no-startup-id appsmenu
+bindsym $mod+s exec --no-startup-id scrotmenu
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -78,7 +80,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -94,31 +96,34 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $teleworkspace "5:   Tele + Pigi "
-set $terminals "1:"
-set $firefox "3:   Firefox"
-set $ide "2:  Editor"
-set $audio "6:  Audio"
+#set 5 "5:   Tele + Pigi "
+#set 1 "1:"
+#set $ide " Editor"
+#set $browser " Browser"
+#set $audio " Audio"
 
+workspace 1 output DP-1
+workspace 2 output HDMI-1
+workspace 5 output HDMI-1
 # switch to workspace
-bindsym $mod+1 workspace $terminals
-bindsym $mod+2 workspace $ide
-bindsym $mod+3 workspace $firefox
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3r
 bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace $teleworkspace
-bindsym $mod+6 workspace $audio
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $terminals
-bindsym $mod+Shift+2 move container to workspace $ide
-bindsym $mod+Shift+3 move container to workspace $firefox
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace $teleworkspace
-bindsym $mod+Shift+6 move container to workspace $audio
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
@@ -126,7 +131,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # workspace $audio gaps inner 150
 # workspace $audio gaps outer 200
-# workspace $terminals gaps outer 5
+# workspace 1 gaps outer 5
 gaps outer 5
 gaps inner 5
 # reload the configuration file
@@ -173,7 +178,7 @@ mode "$mode_system" {
         bindsym Escape mode "default"
 }
 bindsym $mod+Pause mode "$mode_system"
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resizen"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -190,19 +195,26 @@ bindsym $mod+r mode "resize"
 #  }
 #}
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
+for_window [class="mpv"] floating enable
 bindsym $mod+Shift+x exec $HOME/.config/i3/scripts/lock_mpv.sh
 bindsym $mod+F10 exec /home/serafim/.config/i3/volume_down.sh
 bindsym $mod+F11 exec /home/serafim/.config/i3/volume_up.sh
 
 exec telegram-desktop
-assign [class="telegram-desktop"] $teleworkspace
+exec google-chrome-stable
+
+exec_always xrandr --output DP-1 --auto --left-of HDMI-1
 exec_always feh --bg-fill '/home/serafim/Pictures/paper.png'
 exec_always setxkbmap -layout "us,ru" && setxkbmap -option "grp:caps_toggle"
-exec_always xrandr --output DP1 --auto --right-of HDMI1
 exec_always pulseaudio --start
 exec_always wmname LG3D
 exec_always --no-startup-id $HOME/.config/polybar/start.sh
+
+assign [class="TelegramDesktop"] 5
+assign [class="Termite"] 1
+assign [class="Google-chrome"] 3
+
 client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused #333333 #333333 #888888 #292d2e

@@ -59,10 +59,10 @@ modules-left = i3
 modules-center = mpd
 modules-right = filesystem volume memory cpu wired-network date xkeyboard
 
-;tray-position = right
-;tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
+tray-position = center
+tray-padding = 0
+tray-transparent = false
+tray-background = #0063ff
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -165,11 +165,9 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
-ws-icon-1 = 1;♚
-ws-icon-default = ♟
 ; Separator in between workspaces
 label-separator = " "
-
+#strip-wsnumbers = true
 
 [module/mpd]
 type = internal/mpd
